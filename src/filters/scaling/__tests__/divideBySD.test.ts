@@ -1,8 +1,7 @@
 import { toBeDeepCloseTo, toMatchCloseTo } from 'jest-matcher-deep-close-to';
 
+import linear from '../../__tests__/data/linear';
 import { divideBySD } from '../divideBySD';
-
-import linear from './data/linear';
 
 expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
 

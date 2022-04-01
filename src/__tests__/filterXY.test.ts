@@ -1,6 +1,6 @@
 import { filterXY } from '..';
 import { FilterType } from '../FilterType';
-import { linear } from '../filters/__tests__/data/linear';
+import linear from '../filters/__tests__/data/linear';
 
 describe('filterXY', () => {
   it('filters', () => {

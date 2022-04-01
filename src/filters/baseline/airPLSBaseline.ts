@@ -2,6 +2,10 @@
 import { airPLSBaseline as baselineFct } from 'baselines';
 import { DataXY } from 'cheminfo-types';
 
+export interface AirPLSBaselineFilter {
+  name: 'airPLSBaseline';
+}
+
 /**
  * Center the mean
  * @param data

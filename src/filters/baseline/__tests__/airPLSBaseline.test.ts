@@ -1,8 +1,7 @@
 import { toBeDeepCloseTo, toMatchCloseTo } from 'jest-matcher-deep-close-to';
 
+import baseline from '../../__tests__/data/baseline';
 import { airPLSBaseline } from '../airPLSBaseline';
-
-import baseline from './data/baseline';
 
 expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
 

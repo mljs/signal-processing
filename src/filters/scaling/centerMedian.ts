@@ -1,6 +1,10 @@
 import { DataXY } from 'cheminfo-types';
 import { xMedian } from 'ml-spectra-processing';
 
+export interface CenterMedianFilter {
+  name: 'centerMedian';
+}
+
 /**
  * Center the median
  * @param data

@@ -1,6 +1,11 @@
 import { DataXY } from 'cheminfo-types';
 import { xGetFromToIndex } from 'ml-spectra-processing';
 
+export interface FromToFilter {
+  name: 'equallySpaced';
+  options?: FromToOptions;
+}
+
 export interface FromToOptions {
   fromIndex?: number;
   toIndex?: number;

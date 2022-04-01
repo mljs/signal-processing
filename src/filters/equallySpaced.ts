@@ -1,6 +1,11 @@
 import { DataXY } from 'cheminfo-types';
 import { xyEquallySpaced } from 'ml-spectra-processing';
 
+export interface EquallySpacedFilter {
+  name: 'equallySpaced';
+  options?: EquallySpacedOptions;
+}
+
 export interface EquallySpacedOptions {
   /** from
    * @default x[0]

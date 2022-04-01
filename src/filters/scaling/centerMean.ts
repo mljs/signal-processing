@@ -1,6 +1,10 @@
 import { DataXY } from 'cheminfo-types';
 import { xMean } from 'ml-spectra-processing';
 
+export interface CenterMeanFilter {
+  name: 'centerMean';
+}
+
 /**
  * Center the mean
  * @param data

@@ -1,6 +1,10 @@
 import { DataXY } from 'cheminfo-types';
 import { xStandardDeviation } from 'ml-spectra-processing';
 
+export interface DivideBySDFilter {
+  name: 'divdeBySD';
+}
+
 /**
  * Center the mean
  * @param data
