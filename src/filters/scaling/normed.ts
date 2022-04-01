@@ -6,20 +6,10 @@ export interface NormedFilter {
   options?: NormedOptions;
 }
 
-export interface NormedOptions {
-  /** value by which to divide the data
-   * @default 'absolute'
-   */
-  algorithm?: string;
-  /** sum value
-   * @default 1
-   */
-  sumValue?: number;
-  /** max value
-   * @default 1
-   */
-  maxValue?: number;
-}
+export type NormedOptions = Omit<
+  Exclude<Parameters<typeof xNormed>[1], undefined>,
+  'output'
+>;
 
 /**
  * Center the mean

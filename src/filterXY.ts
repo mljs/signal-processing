@@ -15,10 +15,13 @@ export function filterXY(
   let result = { x: xEnsureFloat64(data.x), y: xEnsureFloat64(data.y) };
 
   for (let filter of filters) {
-    if (!Filters[filter.name]) {
+    // eslint-disable-next-line import/namespace
+    const filterFct = Filters[filter.name];
+    if (!filterFct) {
       throw new Error(`Unknown filter: ${filter.name}`);
     }
-    result = Filters[filter.name](result, filter.options);
+    // @ts-expect-error some method have options and some other ones don't have any options
+    result = filterFct(result, filter.options);
   }
 
   return result;

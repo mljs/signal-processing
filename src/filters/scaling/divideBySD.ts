@@ -2,7 +2,7 @@ import { DataXY } from 'cheminfo-types';
 import { xStandardDeviation } from 'ml-spectra-processing';
 
 export interface DivideBySDFilter {
-  name: 'divdeBySD';
+  name: 'divideBySD';
 }
 
 /**

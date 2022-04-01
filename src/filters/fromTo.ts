@@ -2,16 +2,12 @@ import { DataXY } from 'cheminfo-types';
 import { xGetFromToIndex } from 'ml-spectra-processing';
 
 export interface FromToFilter {
-  name: 'equallySpaced';
+  name: 'fromTo';
   options?: FromToOptions;
 }
 
-export interface FromToOptions {
-  fromIndex?: number;
-  toIndex?: number;
-  from?: number;
-  to?: number;
-}
+export type FromToOptions = Parameters<typeof xGetFromToIndex>[1];
+
 /**
  * Filter that allows to
  * @param data

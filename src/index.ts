@@ -1,3 +1,3 @@
 export * from './filterXY';
 
-export * from 'filt'
+export * from './filters/filters';
