@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.0](https://github.com/mljs/signal-processing/compare/v0.0.1...v0.1.0) (2022-04-06)
+
+
+### Features
+
+* add many filters ([97ccfcf](https://github.com/mljs/signal-processing/commit/97ccfcffbbcbf36a6b215e47762a11613ac77bc9))
+* add more baseline corrections ([2f6ecd3](https://github.com/mljs/signal-processing/commit/2f6ecd309762a77442e800b33c12af39176833ab))
+
 ### 0.0.1 (2022-04-04)
 
 
