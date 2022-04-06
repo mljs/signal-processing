@@ -7,7 +7,6 @@ export interface AirPLSBaselineFilter {
 }
 
 /**
- * Center the mean
  * @param data
  */
 export function airPLSBaseline(data: DataXY<Float64Array>) {

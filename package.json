@@ -49,6 +49,7 @@
   "dependencies": {
     "baselines": "^1.1.1",
     "cheminfo-types": "^1.1.0",
-    "ml-spectra-processing": "^11.2.0"
+    "ml-savitzky-golay-generalized": "^4.0.1",
+    "ml-spectra-processing": "^11.3.0"
   }
 }

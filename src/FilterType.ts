@@ -1,11 +1,20 @@
-import { AirPLSBaselineFilter } from './filters/baseline/airPLSBaseline';
-import { EnsureGrowingFilter } from './filters/ensureGrowing';
-import { EquallySpacedFilter } from './filters/equallySpaced';
-import { FromToFilter } from './filters/fromTo';
-import { CenterMeanFilter } from './filters/scaling/centerMean';
-import { CenterMedianFilter } from './filters/scaling/centerMedian';
-import { DivideBySDFilter } from './filters/scaling/divideBySD';
-import { NormedFilter } from './filters/scaling/normed';
+import {
+  AirPLSBaselineFilter,
+  CenterMeanFilter,
+  CenterMedianFilter,
+  DivideBySDFilter,
+  EnsureGrowingFilter,
+  EquallySpacedFilter,
+  FirstDerivativeFilter,
+  FromToFilter,
+  NormedFilter,
+  RescaleFilter,
+  RollingBallBaselineFilter,
+  RollingMedianBaselineFilter,
+  SavitzkyGolayFilter,
+  SecondDerivativeFilter,
+  ThirdDerivativeFilter,
+} from './filters/filters';
 
 export type FilterType =
   | AirPLSBaselineFilter
@@ -14,5 +23,12 @@ export type FilterType =
   | DivideBySDFilter
   | EnsureGrowingFilter
   | EquallySpacedFilter
+  | FirstDerivativeFilter
   | FromToFilter
-  | NormedFilter;
+  | NormedFilter
+  | RescaleFilter
+  | RollingBallBaselineFilter
+  | RollingMedianBaselineFilter
+  | SavitzkyGolayFilter
+  | SecondDerivativeFilter
+  | ThirdDerivativeFilter;
