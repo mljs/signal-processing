@@ -6,9 +6,11 @@ import {
   EnsureGrowingFilter,
   EquallySpacedFilter,
   FirstDerivativeFilter,
+  IterativePolynomialBaselineFilter,
   FromToFilter,
   NormedFilter,
   RescaleFilter,
+  RollingAverageBaselineFilter,
   RollingBallBaselineFilter,
   RollingMedianBaselineFilter,
   SavitzkyGolayFilter,
@@ -25,8 +27,10 @@ export type FilterType =
   | EquallySpacedFilter
   | FirstDerivativeFilter
   | FromToFilter
+  | IterativePolynomialBaselineFilter
   | NormedFilter
   | RescaleFilter
+  | RollingAverageBaselineFilter
   | RollingBallBaselineFilter
   | RollingMedianBaselineFilter
   | SavitzkyGolayFilter

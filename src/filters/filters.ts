@@ -5,6 +5,8 @@ export * from './scaling/normed';
 export * from './scaling/divideBySD';
 export * from './scaling/rescale';
 export * from './baseline/airPLSBaseline';
+export * from './baseline/iterativePolynomialBaseline';
+export * from './baseline/rollingAverageBaseline';
 export * from './baseline/rollingBallBaseline';
 export * from './baseline/rollingMedianBaseline';
 export * from './ensureGrowing';
