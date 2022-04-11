@@ -16,6 +16,7 @@ import {
   SavitzkyGolayFilter,
   SecondDerivativeFilter,
   ThirdDerivativeFilter,
+  FilterXFilter,
 } from './filters/filters';
 
 export type FilterXYType =
@@ -26,6 +27,7 @@ export type FilterXYType =
   | EnsureGrowingFilter
   | EquallySpacedFilter
   | FirstDerivativeFilter
+  | FilterXFilter
   | FromToFilter
   | IterativePolynomialBaselineFilter
   | NormedFilter
