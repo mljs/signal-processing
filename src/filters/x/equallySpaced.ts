@@ -1,4 +1,4 @@
-import { DataXY } from 'cheminfo-types';
+import { DataXY, FromTo } from 'cheminfo-types';
 import { xyEquallySpaced } from 'ml-spectra-processing';
 
 export interface EquallySpacedFilter {
@@ -6,6 +6,7 @@ export interface EquallySpacedFilter {
   options?: EquallySpacedOptions;
 }
 
+// TODO replace XYEquallySpacedOptions
 export interface EquallySpacedOptions {
   /** from
    * @default x[0]
@@ -19,20 +20,14 @@ export interface EquallySpacedOptions {
    * @default 100
    */
   numberOfPoints?: number;
-  /** array of from / to that should be skipped for the generation of the points
+  /** number of points
    * @default []
    */
-  exclusions?: {
-    from: number;
-    to: number;
-  }[];
+  exclusions?: FromTo[];
   /** array of from / to that should be kept
-   * @default []
+   * @default [{from,to}]
    */
-  zones?: {
-    from: number;
-    to: number;
-  }[];
+  zones?: FromTo[];
 }
 /**
  * Filter that allows to

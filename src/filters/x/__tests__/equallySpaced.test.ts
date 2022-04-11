@@ -2,7 +2,7 @@ import { toBeDeepCloseTo, toMatchCloseTo } from 'jest-matcher-deep-close-to';
 
 import { equallySpaced } from '../equallySpaced';
 
-import linear from './data/linear';
+import linear from '../../__tests__/data/linear';
 
 expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
 
