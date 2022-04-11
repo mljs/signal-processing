@@ -5,7 +5,7 @@ import { firstDerivative } from '../firstDerivative';
 
 expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
 
-test('centerMean', () => {
+test('firstDerivative', () => {
   let result = firstDerivative(linear);
   expect(result).toMatchCloseTo({
     x: Float64Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9]),

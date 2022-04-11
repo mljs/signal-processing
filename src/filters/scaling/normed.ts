@@ -12,7 +12,7 @@ export type NormedOptions = Omit<
 >;
 
 /**
- * Center the mean
+ * Norm the Y values
  * @param data
  */
 export function normed(

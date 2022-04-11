@@ -5,7 +5,7 @@ import { savitzkyGolay } from '../savitzkyGolay';
 
 expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
 
-test('centerMean', () => {
+test('savitzkyGolay', () => {
   let result = savitzkyGolay(linear, {
     derivative: 1,
   });

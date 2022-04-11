@@ -5,7 +5,7 @@ import { rescale } from '../rescale';
 
 expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
 
-test('normed', () => {
+test('rescale', () => {
   const result = rescale(linear, { min: 1, max: 2 });
   expect(result).toMatchCloseTo({
     x: Float64Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9]),
