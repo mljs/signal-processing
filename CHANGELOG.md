@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/mljs/signal-processing/compare/v0.1.0...v0.2.0) (2022-04-11)
+
+
+### Features
+
+* add filterX and update dependency ([5cc1af7](https://github.com/mljs/signal-processing/commit/5cc1af7d761ebe535e0fbad353b91c5f4ceee1a3))
+
 ## [0.1.0](https://github.com/mljs/signal-processing/compare/v0.0.1...v0.1.0) (2022-04-06)
 
 
