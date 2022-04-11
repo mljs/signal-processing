@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0](https://github.com/mljs/signal-processing/compare/v0.2.0...v0.3.0) (2022-04-11)
+
+
+### Features
+
+* rename FilterType to FilterXYType ([7144e89](https://github.com/mljs/signal-processing/commit/7144e89e2102ed4b5a636a4a90617640964b4a62))
+
+
+### Bug Fixes
+
+* export FilterXFilter ([8a3978e](https://github.com/mljs/signal-processing/commit/8a3978e67b7575c2cd1c0cf70fb59c6c57b5e7d6))
+
 ## [0.2.0](https://github.com/mljs/signal-processing/compare/v0.1.0...v0.2.0) (2022-04-11)
 
 
