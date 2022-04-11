@@ -18,7 +18,7 @@ import {
   ThirdDerivativeFilter,
 } from './filters/filters';
 
-export type FilterType =
+export type FilterXYType =
   | AirPLSBaselineFilter
   | CenterMeanFilter
   | CenterMedianFilter

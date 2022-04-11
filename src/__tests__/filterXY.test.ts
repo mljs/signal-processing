@@ -1,10 +1,10 @@
 import { filterXY } from '..';
-import { FilterType } from '../FilterType';
+import { FilterXYType } from '../FilterXYType';
 import linear from '../filters/__tests__/data/linear';
 
 describe('filterXY', () => {
   it('filters', () => {
-    const filters: FilterType[] = [
+    const filters: FilterXYType[] = [
       { name: 'centerMedian' },
       { name: 'fromTo', options: { from: 2, to: 8 } },
     ];

@@ -1,7 +1,7 @@
 import { DataXY } from 'cheminfo-types';
 import { xEnsureFloat64 } from 'ml-spectra-processing';
 
-import { FilterType } from './FilterType';
+import { FilterXYType } from './FilterXYType';
 import * as Filters from './filters/filters';
 
 /**
@@ -10,7 +10,7 @@ import * as Filters from './filters/filters';
  */
 export function filterXY(
   data: DataXY,
-  filters: FilterType[],
+  filters: FilterXYType[],
 ): DataXY<Float64Array> {
   let result = { x: xEnsureFloat64(data.x), y: xEnsureFloat64(data.y) };
 
