@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.4.0](https://github.com/mljs/signal-processing/compare/v0.3.0...v0.4.0) (2022-04-12)
+
+
+### Features
+
+* change code to allow filterXY to return logs ([cf158c7](https://github.com/mljs/signal-processing/commit/cf158c702c459254818f331362b671abd1a9b34d))
+
+
+### Bug Fixes
+
+* display eslint rule ([c6557cd](https://github.com/mljs/signal-processing/commit/c6557cd464af45d2a3300e40b0fd3139724ae094))
+
 ## [0.3.0](https://github.com/mljs/signal-processing/compare/v0.2.0...v0.3.0) (2022-04-11)
 
 
