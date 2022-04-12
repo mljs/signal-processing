@@ -11,5 +11,5 @@ export interface EnsureGrowingFilter {
  * @param data
  */
 export function ensureGrowing(data: DataXY<Float64Array>) {
-  return xyEnsureGrowingX(data);
+  return { data: xyEnsureGrowingX(data) };
 }

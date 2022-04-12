@@ -10,7 +10,7 @@ describe('filterX', () => {
     const result = filterX(linear, {
       exclusions: [{ from: 2, to: 7 }],
     });
-    expect(result).toMatchCloseTo({
+    expect(result.data).toMatchCloseTo({
       x: [1, 2, 7, 8, 9],
       y: [1, 2, 3, 2, 1],
     });

@@ -15,5 +15,5 @@ export function centerMedian(data: DataXY<Float64Array>) {
   for (let i = 0; i < y.length; i++) {
     y[i] -= median;
   }
-  return data;
+  return { data };
 }

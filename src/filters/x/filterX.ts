@@ -34,5 +34,7 @@ export function filterX(
   data: DataXY<Float64Array>,
   options: FilterXOptions = {},
 ) {
-  return xyFilterX(data, options);
+  return {
+    data: xyFilterX(data, options),
+  };
 }

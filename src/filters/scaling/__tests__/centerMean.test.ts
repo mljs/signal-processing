@@ -7,7 +7,7 @@ expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
 
 test('centerMean', () => {
   const result = centerMean(linear);
-  expect(result).toMatchCloseTo({
+  expect(result.data).toMatchCloseTo({
     x: Float64Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9]),
     y: Float64Array.from([
       -1.7777777777777777, -0.7777777777777777, 0.22222222222222232,

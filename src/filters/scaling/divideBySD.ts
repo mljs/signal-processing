@@ -15,5 +15,5 @@ export function divideBySD(data: DataXY<Float64Array>) {
   for (let i = 0; i < y.length; i++) {
     y[i] /= sd;
   }
-  return data;
+  return { data };
 }

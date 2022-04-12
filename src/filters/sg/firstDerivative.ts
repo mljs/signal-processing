@@ -17,5 +17,5 @@ export function firstDerivative(
   options: FirstDerivativeOptions = {},
 ) {
   const { x, y } = data;
-  return { x, y: sgg(y, x, { ...options, derivative: 1 }) };
+  return { data: { x, y: sgg(y, x, { ...options, derivative: 1 }) } };
 }

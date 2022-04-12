@@ -17,5 +17,5 @@ export function thirdDerivative(
   options: ThirdDerivativeOptions = {},
 ) {
   const { x, y } = data;
-  return { x, y: sgg(y, x, { ...options, derivative: 3 }) };
+  return { data: { x, y: sgg(y, x, { ...options, derivative: 3 }) } };
 }

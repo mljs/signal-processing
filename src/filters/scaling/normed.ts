@@ -20,5 +20,5 @@ export function normed(
   options: NormedOptions = {},
 ) {
   xNormed(data.y, { ...options, output: data.y });
-  return data;
+  return { data };
 }

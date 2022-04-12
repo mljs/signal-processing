@@ -19,7 +19,9 @@ export function fromTo(
 ) {
   const { fromIndex, toIndex } = xGetFromToIndex(data.x, options);
   return {
-    x: data.x.subarray(fromIndex, toIndex + 1),
-    y: data.y.subarray(fromIndex, toIndex + 1),
+    data: {
+      x: data.x.subarray(fromIndex, toIndex + 1),
+      y: data.y.subarray(fromIndex, toIndex + 1),
+    },
   };
 }

@@ -20,5 +20,5 @@ export function rescale(
   options: RescaleOptions = {},
 ) {
   xRescale(data.y, { ...options, output: data.y });
-  return data;
+  return { data };
 }

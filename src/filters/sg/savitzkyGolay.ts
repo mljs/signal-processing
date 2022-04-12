@@ -17,5 +17,5 @@ export function savitzkyGolay(
   options: SavitzkyGolayOptions = {},
 ) {
   const { x, y } = data;
-  return { x, y: sgg(y, x, options) };
+  return { data: { x, y: sgg(y, x, options) } };
 }

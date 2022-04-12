@@ -8,21 +8,26 @@ import * as Filters from './filters/filters';
  * Apply filters on {x:[], y:[]}
  * @returns A very important number
  */
-export function filterXY(
-  data: DataXY,
-  filters: FilterXYType[],
-): DataXY<Float64Array> {
-  let result = { x: xEnsureFloat64(data.x), y: xEnsureFloat64(data.y) };
+export function filterXY(data: DataXY, filters: FilterXYType[]) {
+  let result = {
+    data: { x: xEnsureFloat64(data.x), y: xEnsureFloat64(data.y) },
+  };
+
+  const logs = [];
 
   for (let filter of filters) {
-    // eslint-disable-next-line import/namespace
+    const start = Date.now();
     const filterFct = Filters[filter.name];
     if (!filterFct) {
       throw new Error(`Unknown filter: ${filter.name}`);
     }
     // @ts-expect-error some method have options and some other ones don't have any options
-    result = filterFct(result, filter.options);
+    result = filterFct(result.data, filter.options);
+    logs.push({
+      name: filter.name,
+      time: Date.now() - start,
+    });
   }
 
-  return result;
+  return { logs, data: result.data };
 }

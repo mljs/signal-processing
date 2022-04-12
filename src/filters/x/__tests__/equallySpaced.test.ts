@@ -1,8 +1,7 @@
 import { toBeDeepCloseTo, toMatchCloseTo } from 'jest-matcher-deep-close-to';
 
-import { equallySpaced } from '../equallySpaced';
-
 import linear from '../../__tests__/data/linear';
+import { equallySpaced } from '../equallySpaced';
 
 expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
 
@@ -12,7 +11,7 @@ describe('equallySpaced', () => {
       exclusions: [{ from: 2, to: 7 }],
       numberOfPoints: 5,
     });
-    expect(result).toMatchCloseTo({
+    expect(result.data).toMatchCloseTo({
       x: [1, 2, 7, 8, 9],
       y: [1, 2, 3, 2, 1],
     });

@@ -38,5 +38,5 @@ export function equallySpaced(
   data: DataXY<Float64Array>,
   options: EquallySpacedOptions = {},
 ) {
-  return xyEquallySpaced(data, options);
+  return { data: xyEquallySpaced(data, options) };
 }

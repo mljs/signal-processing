@@ -15,5 +15,5 @@ export function centerMean(data: DataXY<Float64Array>) {
   for (let i = 0; i < y.length; i++) {
     y[i] -= mean;
   }
-  return data;
+  return { data };
 }

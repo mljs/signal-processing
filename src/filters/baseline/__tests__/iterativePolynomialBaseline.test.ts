@@ -7,7 +7,7 @@ expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
 
 test('iterativePolynomialBaseline', () => {
   const result = iterativePolynomialBaseline(baseline);
-  expect(result).toMatchCloseTo({
+  expect(result.data).toMatchCloseTo({
     x: Float64Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9]),
     y: Float64Array.from([
       0.3793781975600119, 0.20224002222073012, 0.07574583255802936, 0,
