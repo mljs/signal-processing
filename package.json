@@ -11,14 +11,16 @@
   "files": [
     "src",
     "lib",
-    "lib-esm"
+    "lib-esm",
+    "FilterXYSchema.json"
   ],
   "scripts": {
     "check-types": "tsc --noEmit",
     "clean": "rimraf lib lib-esm",
+    "createSchema": "typescript-json-schema --topRef --refs false ./tsconfig.json FilterXYType > FilterXYSchema.json",
     "eslint": "eslint src --cache",
     "eslint-fix": "npm run eslint -- --fix",
-    "prepack": "npm run tsc",
+    "prepack": "npm run createSchema && npm run tsc",
     "prettier": "prettier --check src",
     "prettier-write": "prettier --write src",
     "test": "npm run test-only && npm run eslint && npm run prettier && npm run check-types",
@@ -44,7 +46,8 @@
     "prettier": "^2.6.2",
     "rimraf": "^3.0.2",
     "ts-jest": "^27.1.4",
-    "typescript": "^4.6.3"
+    "typescript": "^4.6.3",
+    "typescript-json-schema": "^0.53.0"
   },
   "dependencies": {
     "baselines": "^1.1.1",
