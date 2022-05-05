@@ -18,3 +18,4 @@ export * from './sg/savitzkyGolay';
 export * from './x/ensureGrowing';
 export * from './x/equallySpaced';
 export * from './x/filterX';
+export * from './x/calibrateX';
