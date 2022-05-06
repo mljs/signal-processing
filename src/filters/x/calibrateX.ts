@@ -65,7 +65,7 @@ export function calibrateX(
     .sort((a, b) => b.y - a.y)
     .slice(0, nbPeaks);
 
-  if (peaks.length === 0) return { data };
+  if (peaks.length < nbPeaks) return { data };
 
   const middle = xMean(peaks.map((peak) => peak.x));
   return { data: { x: xAdd(data.x, targetX - middle), y: data.y } };
