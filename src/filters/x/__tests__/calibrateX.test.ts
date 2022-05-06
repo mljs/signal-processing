@@ -13,7 +13,7 @@ describe('calibrateX', () => {
 
     let shifted = calibrateX(data);
     expect(shifted.data.x).toMatchCloseTo(
-      Float64Array.from([6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]),
+      Float64Array.from([-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6]),
     );
     expect(shifted.data.y).toStrictEqual(data.y);
   });
@@ -81,8 +81,10 @@ describe('calibrateX', () => {
     });
     // because we look for the real maximum it is not exactly 2
     expect(shifted.data.x).toMatchCloseTo(
-      Float64Array.from([-2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),
+      Float64Array.from([2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]),
     );
-    expect(shifted.data.y).toStrictEqual(data.y);
+    expect(shifted.data.y).toStrictEqual(
+      Float64Array.from([1, 1, 1, 1, 700, 1, 5, 1, 1, 1, 1, 1, 1]),
+    );
   });
 });

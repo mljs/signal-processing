@@ -1,6 +1,6 @@
 import { DataXY } from 'cheminfo-types';
 import { gsd, GSDOptions } from 'ml-gsd';
-import { xFindClosestIndex, xMean, xSubtract } from 'ml-spectra-processing';
+import { xFindClosestIndex, xMean, xAdd } from 'ml-spectra-processing';
 
 export interface CalibrateFilter {
   name: 'calibrateX';
@@ -68,5 +68,5 @@ export function calibrateX(
   if (peaks.length === 0) return { data };
 
   const middle = xMean(peaks.map((peak) => peak.x));
-  return { data: { x: xSubtract(data.x, targetX - middle), y: data.y } };
+  return { data: { x: xAdd(data.x, targetX - middle), y: data.y } };
 }
