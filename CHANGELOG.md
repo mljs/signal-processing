@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.5.1](https://github.com/mljs/signal-processing/compare/v0.5.0...v0.5.1) (2022-05-06)
+
+
+### Bug Fixes
+
+* calibrateX should return an object containing data ([cc9b8df](https://github.com/mljs/signal-processing/commit/cc9b8df168edc6ed3849b813c9d98009a1d2a996))
+
 ## [0.5.0](https://github.com/mljs/signal-processing/compare/v0.4.0...v0.5.0) (2022-05-06)
 
 
