@@ -54,6 +54,6 @@
     "cheminfo-types": "^1.1.0",
     "ml-gsd": "^11.2.0",
     "ml-savitzky-golay-generalized": "^4.0.1",
-    "ml-spectra-processing": "^11.5.0"
+    "ml-spectra-processing": "^11.6.0"
   }
 }
