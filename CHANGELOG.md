@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.5.2](https://github.com/mljs/signal-processing/compare/v0.5.1...v0.5.2) (2022-05-06)
+
+
+### Bug Fixes
+
+* calibrateX didn't move the x axis in the right direction ([7504497](https://github.com/mljs/signal-processing/commit/7504497ae653da1022f7e0b9f752e6d41b4e59c7))
+
 ### [0.5.1](https://github.com/mljs/signal-processing/compare/v0.5.0...v0.5.1) (2022-05-06)
 
 
