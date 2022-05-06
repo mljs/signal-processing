@@ -17,6 +17,10 @@ import {
   SecondDerivativeFilter,
   ThirdDerivativeFilter,
   FilterXFilter,
+  XFunctionFilter,
+  YFunctionFilter,
+  CalibrateFilter,
+  ParetoNormalizationFilter,
 } from './filters/filters';
 
 export type FilterXYType =
@@ -37,4 +41,8 @@ export type FilterXYType =
   | RollingMedianBaselineFilter
   | SavitzkyGolayFilter
   | SecondDerivativeFilter
-  | ThirdDerivativeFilter;
+  | ThirdDerivativeFilter
+  | XFunctionFilter
+  | YFunctionFilter
+  | CalibrateFilter
+  | ParetoNormalizationFilter;

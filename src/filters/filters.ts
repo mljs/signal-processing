@@ -4,6 +4,8 @@ export * from './x/fromTo';
 export * from './scaling/normed';
 export * from './scaling/divideBySD';
 export * from './scaling/rescale';
+export * from './scaling/paretoNormalization';
+
 export * from './baseline/airPLSBaseline';
 export * from './baseline/iterativePolynomialBaseline';
 export * from './baseline/rollingAverageBaseline';
@@ -19,3 +21,6 @@ export * from './x/ensureGrowing';
 export * from './x/equallySpaced';
 export * from './x/filterX';
 export * from './x/calibrateX';
+export * from './x/xFunction';
+
+export * from './scaling/yFunction';
