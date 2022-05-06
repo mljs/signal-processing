@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.5.0](https://github.com/mljs/signal-processing/compare/v0.4.0...v0.5.0) (2022-05-06)
+
+
+### Features
+
+* add calibrateX ([dcddad5](https://github.com/mljs/signal-processing/commit/dcddad586782459272a5bba1389ffdeca7c1b961))
+* add paretoNormalization ([a0f7c15](https://github.com/mljs/signal-processing/commit/a0f7c156cf1902bbece19f1a6e7d94a28c8b8c4f))
+* add xFunction ([ebd44ed](https://github.com/mljs/signal-processing/commit/ebd44ed3e680772c26f86efb5bdb431bd7d76f4c))
+* add yFunction ([60dad5e](https://github.com/mljs/signal-processing/commit/60dad5e098e16c81c19b7e29e279053be2d92147))
+* build and publish schema ([c418388](https://github.com/mljs/signal-processing/commit/c4183887ba5bf072f5401c69f6c5fd444950efb2))
+* expose types ([3e54883](https://github.com/mljs/signal-processing/commit/3e54883d04beb48e0dd0c34ca97a9ecc318a3b08))
+
+
+### Bug Fixes
+
+* export FilterXYType ([d5baf3a](https://github.com/mljs/signal-processing/commit/d5baf3a7a6d94884b53497100b852bb02b6076f8))
+* update dependencies and normed use 'value' ([b964d51](https://github.com/mljs/signal-processing/commit/b964d51b36d31f17c64796350b338cb9aea9f911))
+
 ## [0.4.0](https://github.com/mljs/signal-processing/compare/v0.3.0...v0.4.0) (2022-04-12)
 
 
