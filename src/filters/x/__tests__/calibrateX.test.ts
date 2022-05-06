@@ -12,10 +12,10 @@ describe('calibrateX', () => {
     };
 
     let shifted = calibrateX(data);
-    expect(shifted.x).toMatchCloseTo(
+    expect(shifted.data.x).toMatchCloseTo(
       Float64Array.from([6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]),
     );
-    expect(shifted.y).toStrictEqual(shifted.y);
+    expect(shifted.data.y).toStrictEqual(data.y);
   });
 
   it('too small data', () => {
@@ -51,10 +51,10 @@ describe('calibrateX', () => {
       gsd: gsdOptions,
     });
 
-    expect(shifted.x).toMatchCloseTo(
+    expect(shifted.data.x).toMatchCloseTo(
       Float64Array.from([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
     );
-    expect(shifted.y).toStrictEqual(shifted.y);
+    expect(shifted.data.y).toStrictEqual(data.y);
   });
 
   it('shift of 2', () => {
@@ -80,9 +80,9 @@ describe('calibrateX', () => {
       to: 10,
     });
     // because we look for the real maximum it is not exactly 2
-    expect(shifted.x).toMatchCloseTo(
+    expect(shifted.data.x).toMatchCloseTo(
       Float64Array.from([-2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),
     );
-    expect(shifted.y).toStrictEqual(shifted.y);
+    expect(shifted.data.y).toStrictEqual(data.y);
   });
 });

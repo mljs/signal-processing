@@ -35,7 +35,7 @@ export interface CalibrateOptions {
 export function calibrateX(
   data: DataXY<Float64Array>,
   options: CalibrateOptions = {},
-): DataXY<Float64Array> {
+) {
   const {
     targetX = 0,
     nbPeaks = 1,
@@ -65,8 +65,8 @@ export function calibrateX(
     .sort((a, b) => b.y - a.y)
     .slice(0, nbPeaks);
 
-  if (peaks.length === 0) return data;
+  if (peaks.length === 0) return { data };
 
   const middle = xMean(peaks.map((peak) => peak.x));
-  return { x: xSubtract(data.x, targetX - middle), y: data.y };
+  return { data: { x: xSubtract(data.x, targetX - middle), y: data.y } };
 }
