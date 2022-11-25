@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.1](https://github.com/mljs/signal-processing/compare/v1.0.0...v1.0.1) (2022-11-25)
+
+
+### Bug Fixes
+
+* update dependencies ([4482264](https://github.com/mljs/signal-processing/commit/4482264acec13d100b48b8db320b8a73ef3aa846))
+
+
+### Documentation
+
+* fix wrong homepage url ([#14](https://github.com/mljs/signal-processing/issues/14)) ([f6ac479](https://github.com/mljs/signal-processing/commit/f6ac479465e3f9c4d96ee1eb3f388067563ddf51))
+
 ## [1.0.0](https://github.com/mljs/signal-processing/compare/v0.5.2...v1.0.0) (2022-11-25)
 
 
