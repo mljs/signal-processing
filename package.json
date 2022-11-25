@@ -31,12 +31,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cheminfo/signal-processing.git"
+    "url": "git+https://github.com/mljs/signal-processing.git"
   },
   "bugs": {
-    "url": "https://github.com/cheminfo/signal-processing/issues"
+    "url": "https://github.com/mljs/signal-processing/issues"
   },
-  "homepage": "https://github.com/cheminfo/signal-processing#readme",
+  "homepage": "https://github.com/mljs/signal-processing#readme",
   "devDependencies": {
     "@types/jest": "^27.5.0",
     "eslint": "^8.14.0",
