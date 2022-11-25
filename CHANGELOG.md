@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.0](https://github.com/mljs/signal-processing/compare/v0.5.2...v1.0.0) (2022-11-25)
+
+
+### Bug Fixes
+
+* calibrateX if not enough peaks found ([403bbba](https://github.com/mljs/signal-processing/commit/403bbba2445e5a7eb9155785591ac2e999d4ec8e))
+
+
+### Miscellaneous Chores
+
+* release v1 ([9fb2498](https://github.com/mljs/signal-processing/commit/9fb249883f526a8ae0171d2eb0c8bbcd479a3aa1))
+
 ### [0.5.2](https://github.com/mljs/signal-processing/compare/v0.5.1...v0.5.2) (2022-05-06)
 
 
