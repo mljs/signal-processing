@@ -50,7 +50,7 @@
     "typescript-json-schema": "^0.55.0"
   },
   "dependencies": {
-    "baselines": "^1.1.1",
+    "baselines": "^1.1.4",
     "cheminfo-types": "^1.4.0",
     "ml-gsd": "^12.1.2",
     "ml-savitzky-golay-generalized": "^4.0.1",
