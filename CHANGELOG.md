@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/mljs/signal-processing/compare/v1.0.1...v1.0.2) (2022-11-29)
+
+
+### Bug Fixes
+
+* add schema in release ([9e6a482](https://github.com/mljs/signal-processing/commit/9e6a482c05aa006b6a3665c01fdb66fd36084901))
+
 ## [1.0.1](https://github.com/mljs/signal-processing/compare/v1.0.0...v1.0.1) (2022-11-25)
 
 
