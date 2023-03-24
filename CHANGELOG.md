@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/mljs/signal-processing/compare/v1.0.2...v1.0.3) (2023-03-24)
+
+
+### Bug Fixes
+
+* update ml-spectra-processing ([ace1fb5](https://github.com/mljs/signal-processing/commit/ace1fb5fbad5d2557c789e3144ac78846db1bb0e))
+
 ## [1.0.2](https://github.com/mljs/signal-processing/compare/v1.0.1...v1.0.2) (2022-11-29)
 
 
