@@ -1,6 +1,6 @@
 {
   "name": "ml-signal-processing",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Process data in the form of {x:[], y:[]}",
   "main": "./lib/index.js",
   "module": "./lib-esm/index.js",
