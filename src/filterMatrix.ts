@@ -8,7 +8,7 @@ export function filterMatrix(
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   filters: FilterMatrixType[],
 ) {
-  let result = {
+  const result = {
     data: matrix,
   };
 

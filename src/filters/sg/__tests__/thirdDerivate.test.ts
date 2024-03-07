@@ -6,7 +6,7 @@ import { thirdDerivative } from '../thirdDerivative';
 expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
 
 test('thirdDerivative', () => {
-  let result = thirdDerivative(linear);
+  const result = thirdDerivative(linear);
   expect(result.data).toMatchCloseTo({
     x: Float64Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9]),
     y: Float64Array.from([0, 0, 0, 0, 0, 0, 0, 0, 0]),

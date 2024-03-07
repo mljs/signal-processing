@@ -6,7 +6,7 @@ import { savitzkyGolay } from '../savitzkyGolay';
 expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
 
 test('savitzkyGolay', () => {
-  let result = savitzkyGolay(linear, {
+  const result = savitzkyGolay(linear, {
     derivative: 1,
   });
   expect(result.data).toMatchCloseTo({

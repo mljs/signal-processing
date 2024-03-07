@@ -55,7 +55,7 @@ export function calibrateX(
   const fromIndex = xFindClosestIndex(data.x, from);
   const toIndex = xFindClosestIndex(data.x, to);
 
-  let peaks = gsd(
+  const peaks = gsd(
     {
       x: data.x.subarray(fromIndex, toIndex),
       y: data.y.subarray(fromIndex, toIndex),

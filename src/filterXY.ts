@@ -15,7 +15,7 @@ export function filterXY(data: DataXY, filters: FilterXYType[]) {
 
   const logs = [];
 
-  for (let filter of filters) {
+  for (const filter of filters) {
     const start = Date.now();
     // eslint-disable-next-line import/namespace
     const filterFct = Filters[filter.name];

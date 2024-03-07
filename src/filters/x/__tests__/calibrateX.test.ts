@@ -6,12 +6,12 @@ expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
 
 describe('calibrateX', () => {
   it('undefined params', () => {
-    let data = {
+    const data = {
       x: Float64Array.from([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
       y: Float64Array.from([1, 1, 1, 1, 1, 1, 700, 1, 1, 1, 1, 1, 1]),
     };
 
-    let shifted = calibrateX(data);
+    const shifted = calibrateX(data);
     expect(shifted.data.x).toMatchCloseTo(
       Float64Array.from([-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6]),
     );
@@ -19,7 +19,7 @@ describe('calibrateX', () => {
   });
 
   it('too small data', () => {
-    let data = {
+    const data = {
       x: Float64Array.from([0, 1, 2, 3]),
       y: Float64Array.from([1, 1, 5, 1]),
     };
@@ -29,12 +29,12 @@ describe('calibrateX', () => {
   });
 
   it('no shift', () => {
-    let data = {
+    const data = {
       x: Float64Array.from([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
       y: Float64Array.from([1, 1, 5, 1, 1, 1, 700, 1, 1, 1, 1, 1, 1]),
     };
 
-    let gsdOptions = {
+    const gsdOptions = {
       minMaxRatio: 0.4,
       realTopDetection: true,
       smoothY: true,
@@ -44,7 +44,7 @@ describe('calibrateX', () => {
       },
     };
 
-    let shifted = calibrateX(data, {
+    const shifted = calibrateX(data, {
       from: 1,
       to: 10,
       targetX: 6,
@@ -58,12 +58,12 @@ describe('calibrateX', () => {
   });
 
   it('shift of 2', () => {
-    let data = {
+    const data = {
       x: Float64Array.from([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
       y: Float64Array.from([1, 1, 1, 1, 700, 1, 5, 1, 1, 1, 1, 1, 1]),
     };
 
-    let gsdOptions = {
+    const gsdOptions = {
       minMaxRatio: 0.4,
       realTopDetection: true,
       smoothY: true,
@@ -73,7 +73,7 @@ describe('calibrateX', () => {
       },
     };
 
-    let shifted = calibrateX(data, {
+    const shifted = calibrateX(data, {
       targetX: 6,
       gsd: gsdOptions,
       from: 1,
@@ -89,7 +89,7 @@ describe('calibrateX', () => {
   });
 
   it('2 peaks', () => {
-    let data = {
+    const data = {
       x: Float64Array.from([
         0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
         20,
@@ -99,7 +99,7 @@ describe('calibrateX', () => {
       ]),
     };
 
-    let gsdOptions = {
+    const gsdOptions = {
       minMaxRatio: 0.4,
       realTopDetection: true,
       smoothY: true,
@@ -109,7 +109,7 @@ describe('calibrateX', () => {
       },
     };
 
-    let shifted = calibrateX(data, {
+    const shifted = calibrateX(data, {
       targetX: 6,
       gsd: gsdOptions,
       nbPeaks: 2,
