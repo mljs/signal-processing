@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/mljs/signal-processing/compare/v1.0.3...v1.0.4) (2024-03-07)
+
+
+### Bug Fixes
+
+* update dependencies ([beebf51](https://github.com/mljs/signal-processing/commit/beebf515833c149c78c8574ac8abf8fa4eb0d300))
+
 ## [1.0.3](https://github.com/mljs/signal-processing/compare/v1.0.2...v1.0.3) (2023-03-24)
 
 
