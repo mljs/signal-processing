@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/mljs/signal-processing/compare/v1.0.4...v1.1.0) (2024-10-09)
+
+
+### Features
+
+* add reverseIfNeeded ([d728498](https://github.com/mljs/signal-processing/commit/d72849801e96423d12446399f674aa7271bf11ef))
+
 ## [1.0.4](https://github.com/mljs/signal-processing/compare/v1.0.3...v1.0.4) (2024-03-07)
 
 
