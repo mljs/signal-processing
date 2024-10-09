@@ -7,6 +7,7 @@ export interface MatrixCenterZMeanFilter {
 /**
  * Norm the Y values
  * @param data
+ * @param matrix
  */
 export function centerZMean(matrix: DoubleMatrix) {
   const data = matrixCenterZMean(matrix);

@@ -14,6 +14,7 @@ export type RescaleOptions = Omit<
 /**
  * Center the mean
  * @param data
+ * @param options
  */
 export function rescale(
   data: DataXY<Float64Array>,

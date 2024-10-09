@@ -11,6 +11,7 @@ export type SecondDerivativeOptions = Omit<SGGOptions, 'derivative'>;
 /**
  * Calculate the second derivative using Savitzky–Golay filter.
  * @param data
+ * @param options
  */
 export function secondDerivative(
   data: DataXY<Float64Array>,

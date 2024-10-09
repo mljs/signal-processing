@@ -14,11 +14,12 @@ export function filterMatrix(
 
   const logs: any = [];
 
-  /** todo
-  for (let filter of filters) {
-    const start = Date.now();
-    // eslint-disable-next-line import/namespace
-    const filterFct = Filters[filter.name];
+  /**
+   * todo
+   * for (let filter of filters) {
+   * const start = Date.now();
+   * // eslint-disable-next-line import/namespace
+    * const filterFct = Filters[filter.name];
     if (!filterFct) {
       throw new Error(`Unknown filter: ${filter.name}`);
     }
@@ -28,7 +29,7 @@ export function filterMatrix(
       time: Date.now() - start,
     });
   }
-  */
+   */
 
   return { logs, data: result.data };
 }

@@ -14,6 +14,7 @@ export type NormedOptions = Omit<
 /**
  * Norm the Y values
  * @param data
+ * @param options
  */
 export function normed(
   data: DataXY<Float64Array>,

@@ -8,23 +8,28 @@ export interface EquallySpacedFilter {
 
 // TODO replace XYEquallySpacedOptions
 export interface EquallySpacedOptions {
-  /** from
+  /**
+   * from
    * @default x[0]
    */
   from?: number;
-  /** to
+  /**
+   * to
    * @default x[x.length - 1]
    */
   to?: number;
-  /** number of points
+  /**
+   * number of points
    * @default 100
    */
   numberOfPoints?: number;
-  /** number of points
+  /**
+   * number of points
    * @default []
    */
   exclusions?: FromTo[];
-  /** array of from / to that should be kept
+  /**
+   * array of from / to that should be kept
    * @default [{from,to}]
    */
   zones?: FromTo[];

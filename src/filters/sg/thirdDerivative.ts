@@ -11,6 +11,7 @@ export type ThirdDerivativeOptions = Omit<SGGOptions, 'derivative'>;
 /**
  * Calculate the third derivative using Savitzky–Golay filter.
  * @param data
+ * @param options
  */
 export function thirdDerivative(
   data: DataXY<Float64Array>,

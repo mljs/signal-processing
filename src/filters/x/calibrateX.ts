@@ -8,29 +8,36 @@ export interface CalibrateFilter {
 }
 
 export interface CalibrateOptions {
-  /** from
+  /**
+   * from
    * @default x[0]
    */
   from?: number;
-  /** to
+  /**
+   * to
    * @default x[x.length-1]
    */
   to?: number;
-  /** number of points
+  /**
+   * number of points
    * @default 1
    */
   nbPeaks?: number;
-  /** define the new X value
+  /**
+   * define the new X value
    * @default 0
    */
   targetX?: number;
-  /** array of from / to that should be kept
+  /**
+   * array of from / to that should be kept
    * @default [{from,to}]
    */
   gsd?: GSDOptions;
 }
 /**
  * Filter that allows to calibrateX the x axis based on the presence of peaks
+ * @param data
+ * @param options
  */
 export function calibrateX(
   data: DataXY<Float64Array>,
@@ -40,7 +47,7 @@ export function calibrateX(
     targetX = 0,
     nbPeaks = 1,
     from = data.x[0],
-    to = data.x[data.x.length - 1],
+    to = data.x.at(-1),
     gsd: gsdOptions = {
       minMaxRatio: 0.1,
       realTopDetection: true,

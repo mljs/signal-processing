@@ -10,6 +10,8 @@ export type RescaleOptions = Parameters<typeof matrixZRescale>[1];
 /**
  * Norm the Y values
  * @param data
+ * @param matrix
+ * @param options
  */
 export function zRescale(matrix: DoubleMatrix, options: RescaleOptions = {}) {
   const data = matrixZRescale(matrix, { ...options });

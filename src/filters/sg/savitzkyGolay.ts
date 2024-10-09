@@ -11,6 +11,7 @@ export type SavitzkyGolayOptions = SGGOptions;
 /**
  * Apply the Savitzky Golay Generalized Filter
  * @param data
+ * @param options
  */
 export function savitzkyGolay(
   data: DataXY<Float64Array>,

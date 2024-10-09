@@ -1,6 +1,8 @@
 import { filterMatrix } from '..';
 import { FilterMatrixType } from '../FilterMatrixType';
 
+import { test, expect } from 'vitest';
+
 test('filterMatrix', () => {
   const filters: FilterMatrixType[] = [
     { name: 'pqn' },
