@@ -22,6 +22,7 @@ import {
   CalibrateFilter,
   ParetoNormalizationFilter,
 } from './filters/filters';
+import { ReverseIfNeededFilter } from './filters/x/reverseIfNeeded';
 
 export type FilterXYType =
   | AirPLSBaselineFilter
@@ -45,4 +46,5 @@ export type FilterXYType =
   | XFunctionFilter
   | YFunctionFilter
   | CalibrateFilter
-  | ParetoNormalizationFilter;
+  | ParetoNormalizationFilter
+  | ReverseIfNeededFilter;

@@ -1,5 +1,5 @@
 import { DataXY } from 'cheminfo-types';
-import { xEnsureFloat64 } from 'ml-spectra-processing';
+import { xEnsureFloat64, xyGrowingX } from 'ml-spectra-processing';
 
 import { FilterXYType } from './FilterXYType';
 import * as Filters from './filters/filters';
@@ -12,7 +12,7 @@ import * as Filters from './filters/filters';
  */
 export function filterXY(data: DataXY, filters: FilterXYType[]) {
   let result = {
-    data: { x: xEnsureFloat64(data.x), y: xEnsureFloat64(data.y) },
+    data: xyGrowingX({ x: xEnsureFloat64(data.x), y: xEnsureFloat64(data.y) }),
   };
 
   const logs = [];
@@ -26,6 +26,7 @@ export function filterXY(data: DataXY, filters: FilterXYType[]) {
     }
     // @ts-expect-error some method have options and some other ones don't have any options
     result = filterFct(result.data, filter.options);
+    result.data = xyGrowingX(result.data);
     logs.push({
       name: filter.name,
       time: Date.now() - start,
