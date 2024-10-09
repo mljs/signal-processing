@@ -19,12 +19,12 @@ export function filterMatrix(
    * for (let filter of filters) {
    * const start = Date.now();
    * // eslint-disable-next-line import/namespace
-    * const filterFct = Filters[filter.name];
-    if (!filterFct) {
-      throw new Error(`Unknown filter: ${filter.name}`);
-    }
-    result = filterFct(result.data, filter.options);
-    logs.push({
+   * const filterFct = Filters[filter.name];
+   * if (!filterFct) {
+   * throw new Error(`Unknown filter: ${filter.name}`);
+   * }
+   * result = filterFct(result.data, filter.options);
+    * logs.push({
       name: filter.name,
       time: Date.now() - start,
     });

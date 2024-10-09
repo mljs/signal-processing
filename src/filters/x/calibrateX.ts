@@ -47,7 +47,7 @@ export function calibrateX(
     targetX = 0,
     nbPeaks = 1,
     from = data.x[0],
-    to = data.x.at(-1),
+    to = data.x.at(-1) as number,
     gsd: gsdOptions = {
       minMaxRatio: 0.1,
       realTopDetection: true,

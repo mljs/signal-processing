@@ -24,7 +24,7 @@
     "prettier": "prettier --check src",
     "prettier-write": "prettier --write src",
     "test": "npm run test-only && npm run eslint && npm run prettier && npm run check-types",
-    "test-only": "jest --coverage",
+    "test-only": "vitest run --coverage",
     "tsc": "npm run clean && npm run tsc-cjs && npm run tsc-esm",
     "tsc-cjs": "tsc --project tsconfig.cjs.json",
     "tsc-esm": "tsc --project tsconfig.esm.json"
@@ -38,6 +38,7 @@
   },
   "homepage": "https://github.com/mljs/signal-processing#readme",
   "devDependencies": {
+    "@vitest/coverage-v8": "^2.1.2",
     "eslint": "^9.12.0",
     "eslint-config-cheminfo-typescript": "^16.0.0",
     "jest-matcher-deep-close-to": "^3.0.2",

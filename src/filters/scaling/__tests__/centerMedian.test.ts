@@ -1,4 +1,5 @@
 import { toBeDeepCloseTo, toMatchCloseTo } from 'jest-matcher-deep-close-to';
+import { test, expect } from 'vitest';
 
 import linear from '../../__tests__/data/linear';
 import { centerMedian } from '../centerMedian';
