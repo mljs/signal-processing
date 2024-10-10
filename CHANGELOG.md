@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/mljs/signal-processing/compare/v1.1.0...v1.1.1) (2024-10-10)
+
+
+### Bug Fixes
+
+* allow to import JSON schema as JS module ([a9e3c8f](https://github.com/mljs/signal-processing/commit/a9e3c8fda3377541291a2c555c343c41329b3fac))
+
 ## [1.1.0](https://github.com/mljs/signal-processing/compare/v1.0.4...v1.1.0) (2024-10-09)
 
 
