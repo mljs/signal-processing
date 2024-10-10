@@ -12,12 +12,15 @@
     "src",
     "lib",
     "lib-esm",
+    "FilterXYSchema.d.ts",
+    "FilterXYSchema.js",
     "FilterXYSchema.json"
   ],
   "scripts": {
     "check-types": "tsc --noEmit",
     "clean": "rimraf lib lib-esm",
     "createSchema": "typescript-json-schema --refs false ./tsconfig.json FilterXYType > FilterXYSchema.json",
+    "postcreateSchema": "node scripts/create_js_schema.mjs",
     "eslint": "eslint src --cache",
     "eslint-fix": "npm run eslint -- --fix",
     "prepack": "npm run createSchema && npm run tsc",
