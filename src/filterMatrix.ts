@@ -24,11 +24,11 @@ export function filterMatrix(
    * throw new Error(`Unknown filter: ${filter.name}`);
    * }
    * result = filterFct(result.data, filter.options);
-    * logs.push({
-      name: filter.name,
-      time: Date.now() - start,
-    });
-  }
+   * logs.push({
+   * name: filter.name,
+   * time: Date.now() - start,
+   * });
+   * }
    */
 
   return { logs, data: result.data };
