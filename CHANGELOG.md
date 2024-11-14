@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/mljs/signal-processing/compare/v1.1.1...v1.2.0) (2024-11-14)
+
+
+### Features
+
+* add setMinX setMaxX setMinY setMaxY ([abbf225](https://github.com/mljs/signal-processing/commit/abbf225b0345165d06a9d927187928cbeda64ebb))
+
 ## [1.1.1](https://github.com/mljs/signal-processing/compare/v1.1.0...v1.1.1) (2024-10-10)
 
 
