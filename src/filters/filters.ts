@@ -21,7 +21,11 @@ export * from './x/ensureGrowing';
 export * from './x/reverseIfNeeded';
 export * from './x/equallySpaced';
 export * from './x/filterX';
+export * from './x/setMaxX';
+export * from './x/setMinX';
 export * from './x/calibrateX';
 export * from './x/xFunction';
 
 export * from './scaling/yFunction';
+export * from './y/setMaxY';
+export * from './y/setMinY';
