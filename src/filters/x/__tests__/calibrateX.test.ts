@@ -1,9 +1,6 @@
-import { toBeDeepCloseTo, toMatchCloseTo } from 'jest-matcher-deep-close-to';
 import { describe, it, expect } from 'vitest';
 
-import { calibrateX } from '../calibrateX';
-
-expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
+import { calibrateX } from '../calibrateX.ts';
 
 describe('calibrateX', () => {
   it('undefined params', () => {

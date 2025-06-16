@@ -1,4 +1,4 @@
-import { DataXY } from 'cheminfo-types';
+import type { DataXY } from 'cheminfo-types';
 import { xAdd, xMinValue } from 'ml-spectra-processing';
 
 export interface SetMinYFilter {

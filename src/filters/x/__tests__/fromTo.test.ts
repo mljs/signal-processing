@@ -1,10 +1,7 @@
-import { toBeDeepCloseTo, toMatchCloseTo } from 'jest-matcher-deep-close-to';
 import { describe, it, expect } from 'vitest';
 
-import linear from '../../__tests__/data/linear';
-import { fromTo } from '../fromTo';
-
-expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
+import linear from '../../__tests__/data/linear.ts';
+import { fromTo } from '../fromTo.ts';
 
 describe('fromTo', () => {
   it('nothing to do', () => {

@@ -1,10 +1,7 @@
-import { toBeDeepCloseTo, toMatchCloseTo } from 'jest-matcher-deep-close-to';
 import { test, expect } from 'vitest';
 
-import baseline from '../../__tests__/data/baseline';
-import { rollingAverageBaseline } from '../rollingAverageBaseline';
-
-expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
+import baseline from '../../__tests__/data/baseline.ts';
+import { rollingAverageBaseline } from '../rollingAverageBaseline.ts';
 
 test('rollingAverageBaseline', () => {
   const result = rollingAverageBaseline(baseline);

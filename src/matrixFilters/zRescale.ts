@@ -1,4 +1,5 @@
-import { matrixZRescale, DoubleMatrix } from 'ml-spectra-processing';
+import type { DoubleMatrix } from 'ml-spectra-processing';
+import { matrixZRescale } from 'ml-spectra-processing';
 
 export interface MatrixZRescaleFilter {
   name: 'matrixZRecale';

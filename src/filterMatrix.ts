@@ -1,8 +1,8 @@
-import { DoubleMatrix } from 'ml-spectra-processing';
+import type { DoubleMatrix } from 'ml-spectra-processing';
 
-import { FilterMatrixType } from './FilterMatrixType';
-//import * as Filters from './matrixFilters/matrixFilters';
+import type { FilterMatrixType } from './FilterMatrixType.ts';
 
+// eslint-disable-next-line jsdoc/require-jsdoc
 export function filterMatrix(
   matrix: DoubleMatrix,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars

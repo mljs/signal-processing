@@ -1,8 +1,8 @@
 import { describe, it, expect } from 'vitest';
 
-import { filterXY } from '..';
-import { FilterXYType } from '../FilterXYType';
-import linear from '../filters/__tests__/data/linear';
+import type { FilterXYType } from '../FilterXYType.ts';
+import linear from '../filters/__tests__/data/linear.ts';
+import { filterXY } from '../index.ts';
 
 describe('filterXY', () => {
   it('filters', () => {

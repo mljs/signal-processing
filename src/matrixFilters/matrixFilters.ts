@@ -1,3 +1,3 @@
-export * from './zRescale';
-export * from './centerZMean';
-export * from './pqn';
+export * from './zRescale.ts';
+export * from './centerZMean.ts';
+export * from './pqn.ts';

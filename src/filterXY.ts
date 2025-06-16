@@ -1,8 +1,8 @@
-import { DataXY } from 'cheminfo-types';
+import type { DataXY } from 'cheminfo-types';
 import { xEnsureFloat64, xyGrowingX } from 'ml-spectra-processing';
 
-import { FilterXYType } from './FilterXYType';
-import * as Filters from './filters/filters';
+import type { FilterXYType } from './FilterXYType.ts';
+import * as Filters from './filters/filters.ts';
 
 /**
  * Apply filters on {x:[], y:[]}

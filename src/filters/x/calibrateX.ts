@@ -1,5 +1,6 @@
-import { DataXY } from 'cheminfo-types';
-import { gsd, GSDOptions } from 'ml-gsd';
+import type { DataXY } from 'cheminfo-types';
+import type { GSDOptions } from 'ml-gsd';
+import { gsd } from 'ml-gsd';
 import { xFindClosestIndex, xMean, xAdd } from 'ml-spectra-processing';
 
 export interface CalibrateFilter {

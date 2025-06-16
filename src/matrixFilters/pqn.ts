@@ -1,4 +1,5 @@
-import { DoubleMatrix, matrixPQN } from 'ml-spectra-processing';
+import type { DoubleMatrix } from 'ml-spectra-processing';
+import { matrixPQN } from 'ml-spectra-processing';
 
 export interface PQNFilter {
   name: 'pqn';

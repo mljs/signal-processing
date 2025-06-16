@@ -1,10 +1,7 @@
-import { toBeDeepCloseTo, toMatchCloseTo } from 'jest-matcher-deep-close-to';
 import { test, expect } from 'vitest';
 
-import baseline from '../../__tests__/data/baseline';
-import { airPLSBaseline } from '../airPLSBaseline';
-
-expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
+import baseline from '../../__tests__/data/baseline.ts';
+import { airPLSBaseline } from '../airPLSBaseline.ts';
 
 test('airPLSBaseline', () => {
   const result = airPLSBaseline(baseline);

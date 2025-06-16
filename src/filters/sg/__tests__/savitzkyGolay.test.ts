@@ -1,10 +1,7 @@
-import { toBeDeepCloseTo, toMatchCloseTo } from 'jest-matcher-deep-close-to';
 import { test, expect } from 'vitest';
 
-import linear from '../../__tests__/data/linear';
-import { savitzkyGolay } from '../savitzkyGolay';
-
-expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
+import linear from '../../__tests__/data/linear.ts';
+import { savitzkyGolay } from '../savitzkyGolay.ts';
 
 test('savitzkyGolay', () => {
   const result = savitzkyGolay(linear, {
