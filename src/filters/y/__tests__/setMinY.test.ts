@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 
-import { setMinY } from '../setMinY';
+import { setMinY } from '../setMinY.ts';
 
 describe('setMinY', () => {
   it('default values', () => {

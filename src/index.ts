@@ -1,6 +1,6 @@
-export * from './filterXY';
-export * from './FilterXYType';
-export * from './filterMatrix';
-export * from './FilterMatrixType';
+export * from './filterXY.ts';
+export * from './FilterXYType.ts';
+export * from './filterMatrix.ts';
+export * from './FilterMatrixType.ts';
 
-export * from './filters/filters';
+export * from './filters/filters.ts';

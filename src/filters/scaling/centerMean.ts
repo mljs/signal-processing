@@ -1,4 +1,4 @@
-import { DataXY } from 'cheminfo-types';
+import type { DataXY } from 'cheminfo-types';
 import { xMean } from 'ml-spectra-processing';
 
 export interface CenterMeanFilter {

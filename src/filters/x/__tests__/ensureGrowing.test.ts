@@ -1,11 +1,8 @@
-import { toBeDeepCloseTo, toMatchCloseTo } from 'jest-matcher-deep-close-to';
 import { describe, it, expect } from 'vitest';
 
-import { ensureGrowing } from '../ensureGrowing';
+import { ensureGrowing } from '../ensureGrowing.ts';
 
-import linear from './data/nonGrowing';
-
-expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
+import linear from './data/nonGrowing.ts';
 
 describe('ensureGrowing', () => {
   it('nothing to do', () => {

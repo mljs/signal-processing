@@ -1,6 +1,9 @@
 import fs from 'node:fs';
 
-const schema = fs.readFileSync(new URL('../FilterXYSchema.json', import.meta.url), 'utf8');
+const schema = fs.readFileSync(
+  new URL('../FilterXYSchema.json', import.meta.url),
+  'utf8',
+);
 
 const schemaJs = `'use strict';
 

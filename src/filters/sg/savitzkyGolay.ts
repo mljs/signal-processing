@@ -1,5 +1,6 @@
-import { DataXY } from 'cheminfo-types';
-import { sgg, SGGOptions } from 'ml-savitzky-golay-generalized';
+import type { DataXY } from 'cheminfo-types';
+import type { SGGOptions } from 'ml-savitzky-golay-generalized';
+import { sgg } from 'ml-savitzky-golay-generalized';
 
 export interface SavitzkyGolayFilter {
   name: 'savitzkyGolay';

@@ -1,4 +1,5 @@
-import { matrixCenterZMean, DoubleMatrix } from 'ml-spectra-processing';
+import type { DoubleMatrix } from 'ml-spectra-processing';
+import { matrixCenterZMean } from 'ml-spectra-processing';
 
 export interface MatrixCenterZMeanFilter {
   name: 'matrixCenterZMean';

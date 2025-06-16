@@ -1,4 +1,4 @@
-import {
+import type {
   AirPLSBaselineFilter,
   CenterMeanFilter,
   CenterMedianFilter,
@@ -21,8 +21,8 @@ import {
   YFunctionFilter,
   CalibrateFilter,
   ParetoNormalizationFilter,
-} from './filters/filters';
-import { ReverseIfNeededFilter } from './filters/x/reverseIfNeeded';
+} from './filters/filters.ts';
+import type { ReverseIfNeededFilter } from './filters/x/reverseIfNeeded.ts';
 
 export type FilterXYType =
   | AirPLSBaselineFilter

@@ -1,4 +1,4 @@
-import { DataXY, FromTo } from 'cheminfo-types';
+import type { DataXY, FromTo } from 'cheminfo-types';
 import { xyEquallySpaced } from 'ml-spectra-processing';
 
 export interface EquallySpacedFilter {

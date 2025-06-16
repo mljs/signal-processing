@@ -1,10 +1,7 @@
-import { toBeDeepCloseTo, toMatchCloseTo } from 'jest-matcher-deep-close-to';
 import { test, expect } from 'vitest';
 
-import baseline from '../../__tests__/data/baseline';
-import { rollingMedianBaseline } from '../rollingMedianBaseline';
-
-expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
+import baseline from '../../__tests__/data/baseline.ts';
+import { rollingMedianBaseline } from '../rollingMedianBaseline.ts';
 
 test('rollingMedianBaseline', () => {
   const result = rollingMedianBaseline(baseline);

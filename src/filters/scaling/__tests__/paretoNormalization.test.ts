@@ -1,9 +1,6 @@
-import { toBeDeepCloseTo, toMatchCloseTo } from 'jest-matcher-deep-close-to';
 import { test, expect } from 'vitest';
 
-import { paretoNormalization } from '../paretoNormalization';
-
-expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
+import { paretoNormalization } from '../paretoNormalization.ts';
 
 test('paretoNormalization', () => {
   const data = {

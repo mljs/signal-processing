@@ -1,10 +1,7 @@
-import { toBeDeepCloseTo, toMatchCloseTo } from 'jest-matcher-deep-close-to';
 import { test, expect } from 'vitest';
 
-import linear from '../../__tests__/data/linear';
-import { normed } from '../normed';
-
-expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
+import linear from '../../__tests__/data/linear.ts';
+import { normed } from '../normed.ts';
 
 test('normed', () => {
   const result = normed(linear, { algorithm: 'max', value: 10 });

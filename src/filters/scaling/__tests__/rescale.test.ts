@@ -1,10 +1,7 @@
-import { toBeDeepCloseTo, toMatchCloseTo } from 'jest-matcher-deep-close-to';
 import { test, expect } from 'vitest';
 
-import linear from '../../__tests__/data/linear';
-import { rescale } from '../rescale';
-
-expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
+import linear from '../../__tests__/data/linear.ts';
+import { rescale } from '../rescale.ts';
 
 test('rescale', () => {
   const result = rescale(linear, { min: 1, max: 2 });

@@ -1,4 +1,4 @@
-import { DataXY } from 'cheminfo-types';
+import type { DataXY } from 'cheminfo-types';
 import { xRescale } from 'ml-spectra-processing';
 
 export interface RescaleFilter {

@@ -1,10 +1,7 @@
-import { toBeDeepCloseTo, toMatchCloseTo } from 'jest-matcher-deep-close-to';
 import { test, expect } from 'vitest';
 
-import linear from '../../__tests__/data/linear';
-import { thirdDerivative } from '../thirdDerivative';
-
-expect.extend({ toBeDeepCloseTo, toMatchCloseTo });
+import linear from '../../__tests__/data/linear.ts';
+import { thirdDerivative } from '../thirdDerivative.ts';
 
 test('thirdDerivative', () => {
   const result = thirdDerivative(linear);

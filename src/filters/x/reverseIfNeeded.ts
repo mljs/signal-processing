@@ -1,4 +1,4 @@
-import { DataXY } from 'cheminfo-types';
+import type { DataXY } from 'cheminfo-types';
 import { xyGrowingX } from 'ml-spectra-processing';
 
 export interface ReverseIfNeededFilter {

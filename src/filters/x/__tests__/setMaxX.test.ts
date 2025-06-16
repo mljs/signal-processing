@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 
-import { setMaxX } from '../setMaxX';
+import { setMaxX } from '../setMaxX.ts';
 
 describe('setMaxX', () => {
   it('default values', () => {
