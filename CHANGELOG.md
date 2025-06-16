@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.0.0](https://github.com/mljs/signal-processing/compare/v1.2.0...v2.0.0) (2025-06-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* The JSON schema must now be imported like this: `import filterXY from 'ml-signal-processing/FilterXYSchema.json' with { type: 'json' };`
+* switch to esm-only and update `ml-gsd` ([#25](https://github.com/mljs/signal-processing/issues/25))
+
+### Bug Fixes
+
+* expose FilterXYSchema.json in exports ([#27](https://github.com/mljs/signal-processing/issues/27)) ([8cf34d0](https://github.com/mljs/signal-processing/commit/8cf34d00c000c9468c2241b4c56ac6aba0fb2fe8))
+
+
+### Code Refactoring
+
+* switch to esm-only and update `ml-gsd` ([#25](https://github.com/mljs/signal-processing/issues/25)) ([eca5d21](https://github.com/mljs/signal-processing/commit/eca5d2119d6cc1e2da59549d6ec94ec8bd169a31))
+
 ## [1.2.0](https://github.com/mljs/signal-processing/compare/v1.1.1...v1.2.0) (2024-11-14)
 
 
