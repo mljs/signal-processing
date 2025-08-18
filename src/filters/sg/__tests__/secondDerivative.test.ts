@@ -1,10 +1,11 @@
-import { test, expect } from 'vitest';
+import { expect, test } from 'vitest';
 
 import linear from '../../__tests__/data/linear.ts';
 import { secondDerivative } from '../secondDerivative.ts';
 
 test('secondDerivative', () => {
   const result = secondDerivative(linear);
+
   expect(result.data).toMatchCloseTo({
     x: Float64Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9]),
     y: Float64Array.from([

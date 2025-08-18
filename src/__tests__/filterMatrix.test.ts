@@ -1,4 +1,4 @@
-import { test, expect } from 'vitest';
+import { expect, test } from 'vitest';
 
 import type { FilterMatrixType } from '../FilterMatrixType.ts';
 import { filterMatrix } from '../index.ts';

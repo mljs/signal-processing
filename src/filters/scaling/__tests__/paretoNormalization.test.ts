@@ -1,4 +1,4 @@
-import { test, expect } from 'vitest';
+import { expect, test } from 'vitest';
 
 import { paretoNormalization } from '../paretoNormalization.ts';
 
@@ -9,6 +9,7 @@ test('paretoNormalization', () => {
   };
 
   const result = paretoNormalization(data);
+
   expect(result.data).toMatchCloseTo({
     x: Float64Array.from([2, 3, 4]),
     y: Float64Array.from([

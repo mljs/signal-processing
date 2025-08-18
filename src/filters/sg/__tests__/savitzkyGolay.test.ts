@@ -1,4 +1,4 @@
-import { test, expect } from 'vitest';
+import { expect, test } from 'vitest';
 
 import linear from '../../__tests__/data/linear.ts';
 import { savitzkyGolay } from '../savitzkyGolay.ts';
@@ -7,6 +7,7 @@ test('savitzkyGolay', () => {
   const result = savitzkyGolay(linear, {
     derivative: 1,
   });
+
   expect(result.data).toMatchCloseTo({
     x: Float64Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9]),
     y: Float64Array.from([
