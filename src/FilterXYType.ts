@@ -1,14 +1,17 @@
 import type {
   AirPLSBaselineFilter,
+  CalibrateFilter,
   CenterMeanFilter,
   CenterMedianFilter,
   DivideBySDFilter,
   EnsureGrowingFilter,
   EquallySpacedFilter,
+  FilterXFilter,
   FirstDerivativeFilter,
-  IterativePolynomialBaselineFilter,
   FromToFilter,
+  IterativePolynomialBaselineFilter,
   NormedFilter,
+  ParetoNormalizationFilter,
   RescaleFilter,
   RollingAverageBaselineFilter,
   RollingBallBaselineFilter,
@@ -16,11 +19,8 @@ import type {
   SavitzkyGolayFilter,
   SecondDerivativeFilter,
   ThirdDerivativeFilter,
-  FilterXFilter,
   XFunctionFilter,
   YFunctionFilter,
-  CalibrateFilter,
-  ParetoNormalizationFilter,
 } from './filters/filters.ts';
 import type { ReverseIfNeededFilter } from './filters/x/reverseIfNeeded.ts';
 

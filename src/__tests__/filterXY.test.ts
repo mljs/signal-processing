@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
 
 import type { FilterXYType } from '../FilterXYType.ts';
 import linear from '../filters/__tests__/data/linear.ts';
@@ -12,6 +12,7 @@ describe('filterXY', () => {
     ];
 
     const result = filterXY(linear, filters);
+
     expect(result.data).toStrictEqual({
       x: Float64Array.from([2, 3, 4, 5, 6, 7, 8]),
       y: Float64Array.from([-1, 0, 1, 2, 1, 0, -1]),
@@ -25,6 +26,7 @@ describe('filterXY', () => {
       y: Float64Array.from([1, 2, 3, 4, 1]),
     };
     const result = filterXY(data, filters);
+
     expect(result.data).toStrictEqual({
       x: Float64Array.from([1, 2, 3, 4, 5]),
       y: Float64Array.from([1, 2, 3, 4, 1]),
@@ -38,6 +40,7 @@ describe('filterXY', () => {
       y: Float64Array.from([1, 2, 3, 4, 1]),
     };
     const result = filterXY(data, filters);
+
     expect(result.data).toStrictEqual({
       x: Float64Array.from([1, 2, 3, 4, 5]),
       y: Float64Array.from([1, 4, 3, 2, 1]),

@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
 
 import { setMinY } from '../setMinY.ts';
 
@@ -9,6 +9,7 @@ describe('setMinY', () => {
       y: Float64Array.from([2, 3, 4]),
     };
     const result = setMinY(data, {});
+
     expect(result.data).toStrictEqual({
       x: Float64Array.from([1, 2, 3]),
       y: new Float64Array([0, 1, 2]),
@@ -22,6 +23,7 @@ describe('setMinY', () => {
       y: Float64Array.from([2, 3, 4]),
     };
     const result = setMinY(data, { min: 2 });
+
     expect(result.data).toStrictEqual({
       x: Float64Array.from([1, 2, 3]),
       y: new Float64Array([2, 3, 4]),
@@ -35,6 +37,7 @@ describe('setMinY', () => {
       y: Float64Array.from([2, 3, 4]),
     };
     const result = setMinY(data, { min: -1 });
+
     expect(result.data).toStrictEqual({
       x: Float64Array.from([1, 2, 3]),
       y: new Float64Array([-1, 0, 1]),

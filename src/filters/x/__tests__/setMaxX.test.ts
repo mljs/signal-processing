@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
 
 import { setMaxX } from '../setMaxX.ts';
 
@@ -9,6 +9,7 @@ describe('setMaxX', () => {
       y: Float64Array.from([2, 3, 4]),
     };
     const result = setMaxX(data, {});
+
     expect(result.data).toStrictEqual({
       x: Float64Array.from([-1, 0, 1]),
       y: Float64Array.from([2, 3, 4]),
@@ -22,6 +23,7 @@ describe('setMaxX', () => {
       y: Float64Array.from([2, 3, 4]),
     };
     const result = setMaxX(data, { max: 3 });
+
     expect(result.data).toStrictEqual({
       x: Float64Array.from([1, 2, 3]),
       y: new Float64Array([2, 3, 4]),
@@ -35,6 +37,7 @@ describe('setMaxX', () => {
       y: Float64Array.from([2, 3, 4]),
     };
     const result = setMaxX(data, { max: -1 });
+
     expect(result.data).toStrictEqual({
       x: Float64Array.from([-3, -2, -1]),
       y: Float64Array.from([2, 3, 4]),

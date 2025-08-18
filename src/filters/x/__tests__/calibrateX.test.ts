@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
 
 import { calibrateX } from '../calibrateX.ts';
 
@@ -10,6 +10,7 @@ describe('calibrateX', () => {
     };
 
     const shifted = calibrateX(data);
+
     expect(shifted.data.x).toMatchCloseTo(
       Float64Array.from([-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6]),
     );
@@ -21,6 +22,7 @@ describe('calibrateX', () => {
       x: Float64Array.from([0, 1, 2, 3]),
       y: Float64Array.from([1, 1, 5, 1]),
     };
+
     expect(() => calibrateX(data, { from: 1, to: 10 })).toThrow(
       'Window size is higher than the data lengt',
     );
@@ -77,6 +79,7 @@ describe('calibrateX', () => {
       from: 1,
       to: 10,
     });
+
     // because we look for the real maximum it is not exactly 2
     expect(shifted.data.x).toMatchCloseTo(
       Float64Array.from([2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]),
@@ -112,6 +115,7 @@ describe('calibrateX', () => {
       gsd: gsdOptions,
       nbPeaks: 2,
     });
+
     // because we look for the real maximum it is not exactly 2
     expect(shifted.data.x).toMatchCloseTo(
       Float64Array.from([
