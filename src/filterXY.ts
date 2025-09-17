@@ -19,7 +19,9 @@ export function filterXY(data: DataXY, filters: FilterXYType[]) {
 
   for (const filter of filters) {
     const start = Date.now();
-
+    if (!filter.name) {
+      continue;
+    }
     const filterFct = Filters[filter.name];
     if (!filterFct) {
       throw new Error(`Unknown filter: ${filter.name}`);
