@@ -66,7 +66,7 @@ test('reverseIfNeeded, with empty filter', () => {
   });
 });
 
-test('test unknown filter', () => {
+test('unknown filter', () => {
   // @ts-expect-error testing error
   const filters: FilterXYType[] = [{ name: 'abc' }];
   const data = {
