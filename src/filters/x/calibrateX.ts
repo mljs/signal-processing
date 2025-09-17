@@ -63,15 +63,15 @@ export function calibrateX(
   const fromIndex = xFindClosestIndex(data.x, from);
   const toIndex = xFindClosestIndex(data.x, to);
 
-  const peaks = gsd(
+  let peaks = gsd(
     {
       x: data.x.subarray(fromIndex, toIndex),
       y: data.y.subarray(fromIndex, toIndex),
     },
     gsdOptions,
-  )
-    .sort((a, b) => b.y - a.y)
-    .slice(0, nbPeaks);
+  );
+  peaks.sort((a, b) => b.y - a.y);
+  peaks = peaks.slice(0, nbPeaks);
 
   if (peaks.length < nbPeaks) return { data };
 

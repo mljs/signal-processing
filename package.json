@@ -40,8 +40,8 @@
   "devDependencies": {
     "@vitest/coverage-v8": "^3.2.4",
     "@zakodium/tsconfig": "^1.0.2",
-    "eslint": "^9.33.0",
-    "eslint-config-cheminfo-typescript": "^19.0.0",
+    "eslint": "^9.35.0",
+    "eslint-config-cheminfo-typescript": "^20.0.0",
     "jest-matcher-deep-close-to": "^3.0.2",
     "prettier": "^3.6.2",
     "rimraf": "^6.0.1",
@@ -54,6 +54,6 @@
     "cheminfo-types": "^1.8.1",
     "ml-gsd": "^13.0.1",
     "ml-savitzky-golay-generalized": "^4.2.0",
-    "ml-spectra-processing": "^14.17.0"
+    "ml-spectra-processing": "^14.17.1"
   }
 }
