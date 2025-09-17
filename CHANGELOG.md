@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/mljs/signal-processing/compare/v2.0.0...v2.1.0) (2025-09-17)
+
+
+### Features
+
+* ignore empty filters ([08da5f9](https://github.com/mljs/signal-processing/commit/08da5f9ae6c7e5226f82a0334420ca6e25ee5e4c))
+
 ## [2.0.0](https://github.com/mljs/signal-processing/compare/v1.2.0...v2.0.0) (2025-06-16)
 
 
