@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/mljs/signal-processing/compare/v2.1.0...v2.2.0) (2026-01-10)
+
+
+### Features
+
+* update dependencies and improve return type of filterXY ([e361f19](https://github.com/mljs/signal-processing/commit/e361f1917d59b9042996c7977cb878c587e9225f))
+
 ## [2.1.0](https://github.com/mljs/signal-processing/compare/v2.0.0...v2.1.0) (2025-09-17)
 
 
