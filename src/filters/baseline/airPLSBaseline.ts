@@ -9,7 +9,9 @@ export interface AirPLSBaselineFilter {
 /**
  * @param data
  */
-export function airPLSBaseline(data: DataXY<Float64Array>) {
+export function airPLSBaseline(data: DataXY<Float64Array>): {
+  data: DataXY<Float64Array>;
+} {
   data.y = baselineFct(data.y).correctedSpectrum;
   return { data };
 }

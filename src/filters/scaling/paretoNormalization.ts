@@ -9,7 +9,9 @@ export interface ParetoNormalizationFilter {
  * Filter that allows to
  * @param data
  */
-export function paretoNormalization(data: DataXY<Float64Array>) {
+export function paretoNormalization(data: DataXY<Float64Array>): {
+  data: DataXY<Float64Array>;
+} {
   return {
     data: {
       x: data.x,

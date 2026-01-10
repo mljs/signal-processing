@@ -10,6 +10,8 @@ export interface EnsureGrowingFilter {
  * http://www-groups.mcs.st-andrews.ac.uk/~john/analysis/Lectures/L8.html
  * @param data
  */
-export function ensureGrowing(data: DataXY<Float64Array>) {
+export function ensureGrowing(data: DataXY<Float64Array>): {
+  data: DataXY<Float64Array | number[]>;
+} {
   return { data: xyEnsureGrowingX(data) };
 }

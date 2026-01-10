@@ -19,7 +19,7 @@ export type RescaleOptions = Omit<
 export function rescale(
   data: DataXY<Float64Array>,
   options: RescaleOptions = {},
-) {
+): { data: DataXY<Float64Array> } {
   xRescale(data.y, { ...options, output: data.y });
   return { data };
 }

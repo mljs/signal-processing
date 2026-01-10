@@ -23,7 +23,7 @@ export interface XFunctionOptions {
 export function xFunction(
   data: DataXY<Float64Array>,
   options: XFunctionOptions = {},
-) {
+): { data: DataXY<Float64Array> } {
   return {
     data: {
       x: xApplyFunctionStr(data.x, {

@@ -17,7 +17,7 @@ export type SecondDerivativeOptions = Omit<SGGOptions, 'derivative'>;
 export function secondDerivative(
   data: DataXY<Float64Array>,
   options: SecondDerivativeOptions = {},
-) {
+): { data: DataXY<Float64Array> } {
   const { x, y } = data;
   return { data: { x, y: sgg(y, x, { ...options, derivative: 2 }) } };
 }

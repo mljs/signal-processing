@@ -37,7 +37,7 @@ export interface FilterXOptions {
 export function filterX(
   data: DataXY<Float64Array>,
   options: FilterXOptions = {},
-) {
+): { data: DataXY<number[]> } {
   return {
     data: xyFilterX(data, options),
   };

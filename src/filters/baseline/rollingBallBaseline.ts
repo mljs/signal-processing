@@ -9,7 +9,9 @@ export interface RollingBallBaselineFilter {
 /**
  * @param data
  */
-export function rollingBallBaseline(data: DataXY<Float64Array>) {
+export function rollingBallBaseline(data: DataXY<Float64Array>): {
+  data: DataXY<Float64Array>;
+} {
   data.y = baselineFct(data.y).correctedSpectrum;
   return { data };
 }

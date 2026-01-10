@@ -9,7 +9,9 @@ export interface IterativePolynomialBaselineFilter {
 /**
  * @param data
  */
-export function iterativePolynomialBaseline(data: DataXY<Float64Array>) {
+export function iterativePolynomialBaseline(data: DataXY<Float64Array>): {
+  data: DataXY<Float64Array>;
+} {
   data.y = baselineFct(data.y).correctedSpectrum;
   return { data };
 }

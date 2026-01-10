@@ -17,7 +17,7 @@ export type FirstDerivativeOptions = Omit<SGGOptions, 'derivative'>;
 export function firstDerivative(
   data: DataXY<Float64Array>,
   options: FirstDerivativeOptions = {},
-) {
+): { data: DataXY<Float64Array> } {
   const { x, y } = data;
   return { data: { x, y: sgg(y, x, { ...options, derivative: 1 }) } };
 }

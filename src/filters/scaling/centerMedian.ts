@@ -9,7 +9,9 @@ export interface CenterMedianFilter {
  * Center the median
  * @param data
  */
-export function centerMedian(data: DataXY<Float64Array>) {
+export function centerMedian(data: DataXY<Float64Array>): {
+  data: DataXY<Float64Array>;
+} {
   const { y } = data;
   const median = xMedian(y);
   for (let i = 0; i < y.length; i++) {

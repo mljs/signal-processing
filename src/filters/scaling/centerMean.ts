@@ -9,7 +9,9 @@ export interface CenterMeanFilter {
  * Center the mean
  * @param data
  */
-export function centerMean(data: DataXY<Float64Array>) {
+export function centerMean(data: DataXY<Float64Array>): {
+  data: DataXY<Float64Array>;
+} {
   const { y } = data;
   const mean = xMean(y);
   for (let i = 0; i < y.length; i++) {

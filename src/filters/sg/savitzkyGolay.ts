@@ -17,7 +17,7 @@ export type SavitzkyGolayOptions = SGGOptions;
 export function savitzkyGolay(
   data: DataXY<Float64Array>,
   options: SavitzkyGolayOptions = {},
-) {
+): { data: DataXY<Float64Array> } {
   const { x, y } = data;
   return { data: { x, y: sgg(y, x, options) } };
 }

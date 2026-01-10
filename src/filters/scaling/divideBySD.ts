@@ -9,7 +9,9 @@ export interface DivideBySDFilter {
  * Center the mean
  * @param data
  */
-export function divideBySD(data: DataXY<Float64Array>) {
+export function divideBySD(data: DataXY<Float64Array>): {
+  data: DataXY<Float64Array>;
+} {
   const { y } = data;
   const sd = xStandardDeviation(y);
   for (let i = 0; i < y.length; i++) {

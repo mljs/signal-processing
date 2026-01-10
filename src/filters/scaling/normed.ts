@@ -19,7 +19,7 @@ export type NormedOptions = Omit<
 export function normed(
   data: DataXY<Float64Array>,
   options: NormedOptions = {},
-) {
+): { data: DataXY<Float64Array> } {
   xNormed(data.y, { ...options, output: data.y });
   return { data };
 }
