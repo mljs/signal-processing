@@ -43,7 +43,7 @@ export interface CalibrateOptions {
 export function calibrateX(
   data: DataXY<Float64Array>,
   options: CalibrateOptions = {},
-) {
+): { data: DataXY<Float64Array> } {
   const {
     targetX = 0,
     nbPeaks = 1,

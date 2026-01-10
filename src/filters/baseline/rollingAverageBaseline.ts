@@ -9,7 +9,9 @@ export interface RollingAverageBaselineFilter {
 /**
  * @param data
  */
-export function rollingAverageBaseline(data: DataXY<Float64Array>) {
+export function rollingAverageBaseline(data: DataXY<Float64Array>): {
+  data: DataXY<Float64Array>;
+} {
   data.y = baselineFct(data.y).correctedSpectrum;
   return { data };
 }

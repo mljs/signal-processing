@@ -16,7 +16,7 @@ export type FromToOptions = Parameters<typeof xGetFromToIndex>[1];
 export function fromTo(
   data: DataXY<Float64Array>,
   options: FromToOptions = {},
-) {
+): { data: DataXY<Float64Array> } {
   const { fromIndex, toIndex } = xGetFromToIndex(data.x, options);
   return {
     data: {

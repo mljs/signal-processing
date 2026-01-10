@@ -1,4 +1,4 @@
-import type { DataXY } from 'cheminfo-types';
+import type { DataXY, DoubleArray } from 'cheminfo-types';
 import { xEnsureFloat64, xyGrowingX } from 'ml-spectra-processing';
 
 import type { FilterXYType } from './FilterXYType.ts';
@@ -8,9 +8,12 @@ import * as Filters from './filters/filters.ts';
  * Apply filters on {x:[], y:[]}
  * @param data
  * @param filters
- * @returns A very important number
+ * @returns
  */
-export function filterXY(data: DataXY, filters: FilterXYType[]) {
+export function filterXY(
+  data: DataXY,
+  filters: FilterXYType[],
+): { logs: Array<{ name: string; time: number }>; data: DataXY<DoubleArray> } {
   let result = {
     data: xyGrowingX({ x: xEnsureFloat64(data.x), y: xEnsureFloat64(data.y) }),
   };

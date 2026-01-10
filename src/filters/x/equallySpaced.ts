@@ -42,6 +42,6 @@ export interface EquallySpacedOptions {
 export function equallySpaced(
   data: DataXY<Float64Array>,
   options: EquallySpacedOptions = {},
-) {
+): { data: DataXY<number[]> } {
   return { data: xyEquallySpaced(data, options) };
 }

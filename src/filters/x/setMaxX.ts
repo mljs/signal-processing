@@ -20,7 +20,7 @@ export interface SetMaxXOptions {
 export function setMaxX(
   data: DataXY<Float64Array>,
   options: SetMaxXOptions = {},
-) {
+): { data: DataXY<Float64Array> } {
   const { max = 1 } = options;
   const existingMax = xMaxValue(data.x);
   if (existingMax === max) {

@@ -10,6 +10,8 @@ export interface ReverseIfNeededFilter {
  * http://www-groups.mcs.st-andrews.ac.uk/~john/analysis/Lectures/L8.html
  * @param data
  */
-export function reverseIfNeeded(data: DataXY<Float64Array>) {
+export function reverseIfNeeded(data: DataXY<Float64Array>): {
+  data: DataXY<Float64Array | number[]>;
+} {
   return { data: xyGrowingX(data) };
 }

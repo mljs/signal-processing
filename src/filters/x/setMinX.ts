@@ -20,7 +20,7 @@ export interface SetMinXOptions {
 export function setMinX(
   data: DataXY<Float64Array>,
   options: SetMinXOptions = {},
-) {
+): { data: DataXY<Float64Array> } {
   const { min = 0 } = options;
   const existingMin = xMinValue(data.x);
   if (existingMin === min) {

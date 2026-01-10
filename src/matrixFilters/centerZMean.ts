@@ -1,4 +1,4 @@
-import type { DoubleMatrix } from 'ml-spectra-processing';
+import type { DoubleMatrix } from 'cheminfo-types';
 import { matrixCenterZMean } from 'ml-spectra-processing';
 
 export interface MatrixCenterZMeanFilter {
