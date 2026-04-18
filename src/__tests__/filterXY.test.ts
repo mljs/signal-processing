@@ -74,5 +74,5 @@ test('unknown filter', () => {
     y: Float64Array.from([1, 2, 3, 4, 1]),
   };
 
-  expect(() => filterXY(data, filters)).toThrowError('Unknown filter: abc');
+  expect(() => filterXY(data, filters)).toThrow('Unknown filter: abc');
 });
