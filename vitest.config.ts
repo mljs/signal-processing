@@ -6,5 +6,8 @@ export default defineConfig({
       include: ['src/**'],
     },
     setupFiles: ['vitest.setup.ts'],
+    snapshotFormat: {
+      maxOutputLength: Number.MAX_SAFE_INTEGER,
+    },
   },
 });
