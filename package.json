@@ -38,22 +38,22 @@
   },
   "homepage": "https://github.com/mljs/signal-processing#readme",
   "devDependencies": {
-    "@vitest/coverage-v8": "^4.0.16",
-    "@zakodium/tsconfig": "^1.0.2",
+    "@vitest/coverage-v8": "^4.1.4",
+    "@zakodium/tsconfig": "^1.0.5",
     "eslint": "^9.39.2",
-    "eslint-config-cheminfo-typescript": "^21.0.1",
+    "eslint-config-cheminfo-typescript": "^22.0.0",
     "jest-matcher-deep-close-to": "^3.0.2",
-    "prettier": "^3.7.4",
-    "rimraf": "^6.1.2",
+    "prettier": "^3.8.3",
+    "rimraf": "^6.1.3",
     "typescript": "^5.9.3",
     "typescript-json-schema": "^0.67.1",
-    "vitest": "^4.0.16"
+    "vitest": "^4.1.4"
   },
   "dependencies": {
-    "baselines": "^1.1.9",
-    "cheminfo-types": "^1.10.0",
+    "baselines": "^1.1.10",
+    "cheminfo-types": "^1.15.0",
     "ml-gsd": "^13.1.1",
-    "ml-savitzky-golay-generalized": "^4.2.0",
-    "ml-spectra-processing": "^14.19.0"
+    "ml-savitzky-golay-generalized": "^5.0.0",
+    "ml-spectra-processing": "^14.28.1"
   }
 }
