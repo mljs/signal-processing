@@ -23,7 +23,7 @@ describe('calibrateX', () => {
       y: Float64Array.from([1, 1, 5, 1]),
     };
 
-    expect(() => calibrateX(data, { from: 1, to: 10 })).toThrowError(
+    expect(() => calibrateX(data, { from: 1, to: 10 })).toThrow(
       'Window size is higher than the data lengt',
     );
   });
