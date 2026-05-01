@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/mljs/signal-processing/compare/v2.2.0...v2.2.1) (2026-05-01)
+
+
+### Bug Fixes
+
+* update dependencies ([#36](https://github.com/mljs/signal-processing/issues/36)) ([a513b0c](https://github.com/mljs/signal-processing/commit/a513b0cc4a013b20c636b229e15641c6e9d1f098))
+
 ## [2.2.0](https://github.com/mljs/signal-processing/compare/v2.1.0...v2.2.0) (2026-01-10)
 
 
