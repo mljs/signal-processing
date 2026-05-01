@@ -48,7 +48,7 @@ export function calibrateX(
     targetX = 0,
     nbPeaks = 1,
     from = data.x[0],
-    to = data.x.at(-1) as number,
+    to = data.x.at(-1),
     gsd: gsdOptions = {
       minMaxRatio: 0.1,
       realTopDetection: true,
@@ -61,7 +61,7 @@ export function calibrateX(
   } = options;
 
   const fromIndex = xFindClosestIndex(data.x, from);
-  const toIndex = xFindClosestIndex(data.x, to);
+  const toIndex = xFindClosestIndex(data.x, to as number);
 
   let peaks = gsd(
     {
