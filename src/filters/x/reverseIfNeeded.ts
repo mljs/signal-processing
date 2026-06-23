@@ -7,7 +7,7 @@ export interface ReverseIfNeededFilter {
 
 /**
  * Ensure X values are strictly monotonic increasing
- * http://www-groups.mcs.st-andrews.ac.uk/~john/analysis/Lectures/L8.html
+ * https://www-groups.mcs.st-andrews.ac.uk/~john/analysis/Lectures/L8.html
  * @param data
  */
 export function reverseIfNeeded(data: DataXY<Float64Array>): {
