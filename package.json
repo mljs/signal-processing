@@ -40,7 +40,7 @@
   "dependencies": {
     "baselines": "^1.1.10",
     "cheminfo-types": "^1.15.0",
-    "ml-gsd": "^13.1.1",
+    "ml-gsd": "^14.2.0",
     "ml-savitzky-golay-generalized": "^5.0.0",
     "ml-spectra-processing": "^14.29.1"
   },
