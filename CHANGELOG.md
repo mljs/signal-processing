@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.2](https://github.com/mljs/signal-processing/compare/v2.2.1...v2.2.2) (2026-06-23)
+
+
+### Bug Fixes
+
+* upgrade dependencies (ml-gsd 14.2, ml-spectra-processing 14.29, typescript 6) ([#39](https://github.com/mljs/signal-processing/issues/39)) ([5d30b62](https://github.com/mljs/signal-processing/commit/5d30b62204e9322ad2176c8cfed01d973b064843))
+
 ## [2.2.1](https://github.com/mljs/signal-processing/compare/v2.2.0...v2.2.1) (2026-05-01)
 
 
