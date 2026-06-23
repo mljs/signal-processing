@@ -17,14 +17,14 @@
   ],
   "scripts": {
     "check-types": "tsc --noEmit",
-    "clean": "rimraf lib",
+    "clean": "rimraf coverage lib",
     "createSchema": "typescript-json-schema --refs false ./tsconfig.json FilterXYType > FilterXYSchema.json",
-    "eslint": "eslint . --cache",
-    "eslint-fix": "node --run eslint -- --fix",
+    "eslint": "eslint .",
+    "eslint-fix": "eslint . --fix",
     "prepack": "npm run createSchema && npm run tsc",
     "prettier": "prettier --check .",
     "prettier-write": "prettier --write .",
-    "test": "npm run test-only && npm run eslint && npm run prettier && npm run check-types",
+    "test": "npm run test-only && npm run check-types && npm run eslint && npm run prettier",
     "test-only": "vitest run --coverage",
     "tsc": "npm run clean && npm run tsc-build",
     "tsc-build": "tsc --project tsconfig.build.json"
@@ -37,23 +37,24 @@
     "url": "https://github.com/mljs/signal-processing/issues"
   },
   "homepage": "https://github.com/mljs/signal-processing#readme",
-  "devDependencies": {
-    "@vitest/coverage-v8": "^4.1.5",
-    "@zakodium/tsconfig": "^1.0.5",
-    "eslint": "^9.39.2",
-    "eslint-config-cheminfo-typescript": "^22.0.0",
-    "jest-matcher-deep-close-to": "^3.0.2",
-    "prettier": "^3.8.3",
-    "rimraf": "^6.1.3",
-    "typescript": "^6.0.3",
-    "typescript-json-schema": "^0.67.1",
-    "vitest": "^4.1.5"
-  },
   "dependencies": {
     "baselines": "^1.1.10",
     "cheminfo-types": "^1.15.0",
-    "ml-gsd": "^13.1.1",
+    "ml-gsd": "^14.2.0",
     "ml-savitzky-golay-generalized": "^5.0.0",
-    "ml-spectra-processing": "^14.28.1"
+    "ml-spectra-processing": "^14.29.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@vitest/coverage-istanbul": "^4.1.9",
+    "@zakodium/tsconfig": "^1.0.5",
+    "eslint": "^9.39.2",
+    "eslint-config-cheminfo-typescript": "^22.1.0",
+    "jest-matcher-deep-close-to": "^3.0.2",
+    "prettier": "^3.8.4",
+    "rimraf": "^6.1.3",
+    "typescript": "^6.0.3",
+    "typescript-json-schema": "^0.67.4",
+    "vitest": "^4.1.9"
   }
 }

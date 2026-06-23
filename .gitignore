@@ -119,5 +119,7 @@ dist
 
 .DS_Store
 
+.claude
+
 lib
 lib-esm
